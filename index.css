@@ -1,7 +1,5 @@
-html {
-            font-size: 62.5%;
-            box-sizing: border-box;
-            background-image: url(./image/pexels-tima-miroshnichenko-5380651.jpg);
+body {
+            background-color : black;
         }
 
         *, *::before, *::after {
