@@ -2,11 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculator</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    I'm Ezekiel, a cyber security personnel good in python and its libraries/framesworks e.g nothing
+
+
+
+
+
+</head>
+<body>
+
+<div class="calculator">
+    <form id="form">
+        <input type="text" class="calculator-clac" name="entry" id="clac">
+        <div class="calculator_keys">
+
+            <button type="button"  onclick="form.entry.value += '9'">9</button>
+            <button type="button" onclick="form.entry.value += '8'">8</button>
+            <button type="button" onclick="form.entry.value += '7'">7</button>
+            <button type="button" class="clear" onclick= "form.entry.value = ''">Clr</button>
+
+            <button type="button" onclick="form.entry.value += '6'">6</button>
+            <button type="button" onclick="form.entry.value += '5'">5</button>
+            <button type="button" onclick="form.entry.value += '4'">4</button>
+            <button type="button" class="all-clear"  onclick="form.entry.value = '' ">AC</button>
+
+
+            <button type="button" onclick="form.entry.value += '3'">3</button>
+            <button type="button" onclick="form.entry.value += '2'">2</button>
+            <button type="button" onclick="form.entry.value += '1'">1</button>
+
+
+
+
+            <button type="button" onclick="form.entry.value += '0'">0</button>
+            <button type="button" class="decimal" onclick="form.entry.value += '.'">.</button>
+            <button type="button" class="operator" onclick="form.entry.value += '/'">÷
+            </button>
+
+
+
+
+            <button type="button" class="operator" value="+" onclick="form.entry.value += '+'">+</button>
+            <button type="button" class="operator" value="-" onclick="form.entry.value += '-'">-</button>
+            <button type="button" class="operator" value="*" onclick="form.entry.value += '*'">×</button>
+
+            <button type="button" class="equal-sign operator" onclick="pio()">=</button>
+            <!-- <button type="button" style="width: 500%;" onclick="memory()">MEM</button> -->
+
+        </div>
+    </form>
+</div> 
+<script>
+    function pio() {
+         a = clac.value;
+
+        if ( a !="" && a!= null ) {
+                clac.value = eval(a)
+
+        } else if  (a =="" || a == null) {
+            alert("Please enter the number first")
+        }
+
+    }
+
+</script>
+
 </body>
 </html>
